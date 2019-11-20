@@ -1,0 +1,249 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ECF0F3;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background: #FF9F0F;
+  color: #fff;
+}
+
+::selection {
+  background: #FF9F0F;
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  bottom: 16px;
+}
+
+footer p {
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
+footer p a {
+  font-weight: 700;
+  display: inline;
+  text-decoration: none;
+  color: #B4B4B4;
+}
+
+.container {
+  width: 940px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 140px;
+}
+
+.left {
+  width: 420px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left .logo {
+  padding-bottom: 65.8px;
+}
+
+.left input {
+  width: 400px;
+  height: 60px;
+  border-radius: 100px;
+  color: #2D3641;
+  border-style: none;
+  padding-left: 20px;
+  margin-bottom: 116px;
+}
+
+.left input:focus {
+  outline: none;
+}
+
+.left input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #A8ADB8;
+}
+
+.left input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #A8ADB8;
+}
+
+.left input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #A8ADB8;
+}
+
+.left input::placeholder {
+  font-size: 16px;
+  color: #A8ADB8;
+}
+
+a {
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right {
+  width: 420px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right .list_1 {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 1px #D2D2D2;
+          box-shadow: 0 1px #D2D2D2;
+}
+
+.right .list_1 .button_01 {
+  width: 100px;
+  height: 60px;
+  background-color: #306CFF;
+}
+
+.right .list_1 .button_02 {
+  width: 100px;
+  height: 60px;
+  background-color: #EA4436;
+}
+
+.right .list_1 .button_03 {
+  width: 100px;
+  height: 60px;
+  background-color: #038374;
+}
+
+.right .list_1 .button_04 {
+  width: 60px;
+  height: 60px;
+  background-color: #8DB7DE;
+}
+
+.right .list_2 {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right .list_2 .button_05 {
+  width: 100px;
+  height: 60px;
+  background-color: #EA4C89;
+}
+
+.right .list_2 .button_06 {
+  width: 100px;
+  height: 60px;
+  background-color: #0057FF;
+}
+
+.right .list_2 .button_07 {
+  width: 100px;
+  height: 60px;
+  background-color: #E60124;
+}
+
+.right .list_2 .button_08 {
+  width: 60px;
+  height: 60px;
+  background-color: #8DB7DE;
+}
+
+.right .list_3 {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 -1px #D2D2D2;
+          box-shadow: 0 -1px #D2D2D2;
+}
+
+.right .list_3 .button_09 {
+  width: 126px;
+  height: 60px;
+  background-color: #FF5C00;
+}
+
+.right .list_3 .button_10 {
+  width: 126px;
+  height: 60px;
+  background-color: #2D3641;
+}
+
+.right .list_3 .button_11 {
+  width: 126px;
+  height: 60px;
+  background: linear-gradient(115.46deg, #336EFF 0%, #FF4A3F 100%);
+}
+/*# sourceMappingURL=style.css.map */
