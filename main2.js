@@ -1,28 +1,43 @@
-var baidu = document.querySelector('.button_baidu');
-baidu.addEventListener('click', function () {
+const baidu = document.querySelector('.button_baidu');
+const google = document.querySelector('.button_google');
+const bing = document.querySelector('.button_bing');
+const allweb = document.querySelector('.button_allweb');
+
+const sreachArr = [
+    {
+        ele: baidu,
+        url: 'https://www.baidu.com/s?wd='
+    },
+    {
+        ele: google,
+        url: 'https://www.google.com/search?sxsrf=ACYBGNRZUE-YO33VVcWqh2Z1CnoBtiY_UA%3A1574244452133&ei=ZBDVXZffB4K5wAPD9aOIAQ&q='
+    },
+    {
+        ele: bing,
+        url: 'https://www.bing.com/search?q='
+    }
+]
+
+sreachArr.forEach(d => {
+    d.ele.addEventListener('click', function () {
+        var inputValue = document.querySelector('input').value;
+        d.ele.href = d.url + inputValue;
+    })
+});
+
+allweb.addEventListener('click',function (){
     var inputValue = document.querySelector('input').value;
-    var addHref = 'https://www.baidu.com/s?wd=' + inputValue;
-    baidu.href = addHref;
-})
+    sreachArr.forEach(d => {
+        window.open(d.url + inputValue)
+    })
+}) 
 
-var google =document.querySelector('.button_google');
-google.addEventListener('click',function () {
-    var inputValue = document.querySelector('input').value;
-    var addHref = 'https://www.google.com/search?sxsrf=ACYBGNRZUE-YO33VVcWqh2Z1CnoBtiY_UA%3A1574244452133&ei=ZBDVXZffB4K5wAPD9aOIAQ&q=' + inputValue;
-    google.href = addHref;
-})
 
-var bing = document.querySelector('.button_bing');
-bing.addEventListener('click',function (){
-    var inputValue = document.querySelector('input').value;
-    var addHref = 'https://www.bing.com/search?q=' + inputValue;
-    bing.href = addHref;   
-})
 
-var allweb =document.querySelector('.button_allweb');
-allweb.addEventListener('click', 
+// ————————————
 
-    
+
+
 
 
 var dribbble = document.querySelector('.button_dribbble');
