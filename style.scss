@@ -20,7 +20,7 @@ body {
     height: 300px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 140px;
+    padding-bottom: 80px;
 }
 
 .left {
@@ -44,8 +44,8 @@ body {
         padding-left: 30px;
         margin-bottom: 116px;
         transition: all 0.2s ease;
-        caret-color:#2D3641;
-        
+        caret-color: #2D3641;
+
 
         &:hover {
             box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
@@ -94,7 +94,7 @@ body {
         height: 90px;
         display: flex;
         justify-content: space-between;
-        box-shadow: 0 1px #D2D2D2;
+        box-shadow: 0 1px #DDE2E7;
         align-items: flex-start;
 
 
@@ -117,7 +117,7 @@ body {
         }
 
         .button_allweb {
-        //    yk
+            //    yk
         }
     }
 
@@ -147,7 +147,7 @@ body {
         }
 
         .button_allpic {
-        //    yk
+            //    yk
         }
     }
 
@@ -157,7 +157,7 @@ body {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        box-shadow: 0 -1px #D2D2D2;
+        box-shadow: 0 -1px #DDE2E7;
 
         .button_iconfont {
             width: 126px;
@@ -180,8 +180,6 @@ body {
 
     }
 
-
-
 }
 
 footer {
@@ -198,6 +196,65 @@ footer {
             text-decoration: none;
             color: #B4B4B4;
         }
+    }
+
+}
+
+
+
+
+// —————— 桌面设备自适应 ————————
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+}
+
+// ———————— 手机自适应 ————————
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 120px;
+    }
+
+    .left {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .left input {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .right {
+        width: 90%;
+        height: 250px;
+
+        .list_1,
+        .list_2,
+        .list_3 {
+            height: 77px;
+
+            a {
+                margin: 0 5px;
+            }
+        }
+
     }
 
 }
