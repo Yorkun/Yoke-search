@@ -27,23 +27,6 @@ body {
   color: #fff;
 }
 
-footer {
-  position: fixed;
-  bottom: 16px;
-}
-
-footer p {
-  color: #B4B4B4;
-  font-size: 12px;
-}
-
-footer p a {
-  font-weight: 700;
-  display: inline;
-  text-decoration: none;
-  color: #B4B4B4;
-}
-
 .container {
   width: 940px;
   height: 300px;
@@ -88,6 +71,7 @@ footer p a {
   margin-bottom: 116px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  caret-color: #2D3641;
 }
 
 .left input:hover {
@@ -174,6 +158,9 @@ footer p a {
           justify-content: space-between;
   -webkit-box-shadow: 0 1px #D2D2D2;
           box-shadow: 0 1px #D2D2D2;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .right .list_1 .button_baidu {
@@ -192,12 +179,6 @@ footer p a {
   width: 100px;
   height: 60px;
   background-color: #038374;
-}
-
-.right .list_1 .button_allweb {
-  width: 60px;
-  height: 60px;
-  background-color: #8DB7DE;
 }
 
 .right .list_2 {
@@ -232,12 +213,6 @@ footer p a {
   background-color: #E60124;
 }
 
-.right .list_2 .button_allpic {
-  width: 60px;
-  height: 60px;
-  background-color: #8DB7DE;
-}
-
 .right .list_3 {
   width: 100%;
   height: 90px;
@@ -270,5 +245,22 @@ footer p a {
   width: 126px;
   height: 60px;
   background: linear-gradient(115.46deg, #336EFF 0%, #FF4A3F 100%);
+}
+
+footer {
+  position: fixed;
+  bottom: 16px;
+}
+
+footer p {
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
+footer p a {
+  font-weight: 700;
+  display: inline;
+  text-decoration: none;
+  color: #B4B4B4;
 }
 /*# sourceMappingURL=style.css.map */
