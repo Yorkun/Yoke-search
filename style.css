@@ -13,6 +13,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 ::-moz-selection {
@@ -82,45 +84,42 @@ footer p a {
   border-radius: 100px;
   color: #2D3641;
   border-style: none;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 116px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.left input:hover {
+  -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
 }
 
 .left input:focus {
   outline: none;
+  -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
 }
 
 .left input::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #A8ADB8;
 }
 
 .left input:-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #A8ADB8;
 }
 
 .left input::-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #A8ADB8;
 }
 
 .left input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #A8ADB8;
-}
-
-a {
-  border-radius: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .right {
@@ -138,6 +137,32 @@ a {
           justify-content: space-between;
 }
 
+.right a {
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.right a:hover {
+  -webkit-filter: brightness(1.08);
+          filter: brightness(1.08);
+  cursor: pointer;
+}
+
+.right a:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 .right .list_1 {
   width: 100%;
   height: 90px;
@@ -151,25 +176,25 @@ a {
           box-shadow: 0 1px #D2D2D2;
 }
 
-.right .list_1 .button_01 {
+.right .list_1 .button_baidu {
   width: 100px;
   height: 60px;
   background-color: #306CFF;
 }
 
-.right .list_1 .button_02 {
+.right .list_1 .button_google {
   width: 100px;
   height: 60px;
   background-color: #EA4436;
 }
 
-.right .list_1 .button_03 {
+.right .list_1 .button_ping {
   width: 100px;
   height: 60px;
   background-color: #038374;
 }
 
-.right .list_1 .button_04 {
+.right .list_1 .button_allweb {
   width: 60px;
   height: 60px;
   background-color: #8DB7DE;
@@ -189,25 +214,25 @@ a {
           align-items: center;
 }
 
-.right .list_2 .button_05 {
+.right .list_2 .button_dribbble {
   width: 100px;
   height: 60px;
   background-color: #EA4C89;
 }
 
-.right .list_2 .button_06 {
+.right .list_2 .button_behance {
   width: 100px;
   height: 60px;
   background-color: #0057FF;
 }
 
-.right .list_2 .button_07 {
+.right .list_2 .button_pinterest {
   width: 100px;
   height: 60px;
   background-color: #E60124;
 }
 
-.right .list_2 .button_08 {
+.right .list_2 .button_allpic {
   width: 60px;
   height: 60px;
   background-color: #8DB7DE;
@@ -229,19 +254,19 @@ a {
           box-shadow: 0 -1px #D2D2D2;
 }
 
-.right .list_3 .button_09 {
+.right .list_3 .button_iconfont {
   width: 126px;
   height: 60px;
   background-color: #FF5C00;
 }
 
-.right .list_3 .button_10 {
+.right .list_3 .button_unsplash {
   width: 126px;
   height: 60px;
   background-color: #2D3641;
 }
 
-.right .list_3 .button_11 {
+.right .list_3 .button_image {
   width: 126px;
   height: 60px;
   background: linear-gradient(115.46deg, #336EFF 0%, #FF4A3F 100%);

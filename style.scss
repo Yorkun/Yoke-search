@@ -7,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: all 0.2s ease;
 }
 
 ::selection {
@@ -32,12 +33,9 @@ footer {
 
 }
 
-
-
 .container {
     width: 940px;
     height: 300px;
-    // background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding-bottom: 140px;
@@ -61,27 +59,26 @@ footer {
         border-radius: 100px;
         color: #2D3641;
         border-style: none;
-        padding-left: 20px;
+        padding-left: 30px;
         margin-bottom: 116px;
+        transition: all 0.2s ease;
 
+        &:hover {
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
+            cursor: pointer;
+        }
 
         &:focus {
             outline: none;
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
         }
 
         &::placeholder {
-            font-size: 16px;
+            font-size: 14px;
             color: #A8ADB8;
         }
 
     }
-}
-
-a {
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .right {
@@ -91,6 +88,22 @@ a {
     flex-direction: column;
     justify-content: space-between;
 
+    a {
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+
+    a:hover {
+        filter: brightness(1.08);
+        cursor: pointer;
+    }
+
+    a:active {
+        transform: scale(0.95);
+    }
 
     .list_1 {
         width: 100%;
@@ -99,25 +112,26 @@ a {
         justify-content: space-between;
         box-shadow: 0 1px #D2D2D2;
 
-        .button_01 {
+
+        .button_baidu {
             width: 100px;
             height: 60px;
             background-color: #306CFF;
         }
 
-        .button_02 {
+        .button_google {
             width: 100px;
             height: 60px;
             background-color: #EA4436;
         }
 
-        .button_03 {
+        .button_ping {
             width: 100px;
             height: 60px;
             background-color: #038374;
         }
 
-        .button_04 {
+        .button_allweb {
             width: 60px;
             height: 60px;
             background-color: #8DB7DE;
@@ -131,25 +145,25 @@ a {
         justify-content: space-between;
         align-items: center;
 
-        .button_05 {
+        .button_dribbble {
             width: 100px;
             height: 60px;
             background-color: #EA4C89;
         }
 
-        .button_06 {
+        .button_behance {
             width: 100px;
             height: 60px;
             background-color: #0057FF;
         }
 
-        .button_07 {
+        .button_pinterest {
             width: 100px;
             height: 60px;
             background-color: #E60124;
         }
 
-        .button_08 {
+        .button_allpic {
             width: 60px;
             height: 60px;
             background-color: #8DB7DE;
@@ -164,23 +178,27 @@ a {
         justify-content: space-between;
         box-shadow: 0 -1px #D2D2D2;
 
-        .button_09 {
+        .button_iconfont {
             width: 126px;
             height: 60px;
             background-color: #FF5C00;
         }
 
-        .button_10 {
+        .button_unsplash {
             width: 126px;
             height: 60px;
             background-color: #2D3641;
         }
 
-        .button_11 {
+        .button_image {
             width: 126px;
             height: 60px;
             background: linear-gradient(115.46deg, #336EFF 0%, #FF4A3F 100%);
         }
+
+
     }
+
+
 
 }
