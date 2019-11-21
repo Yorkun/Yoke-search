@@ -372,5 +372,8 @@ footer p a {
   .right .list_3 a {
     margin: 0 5px;
   }
+  .tip {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
