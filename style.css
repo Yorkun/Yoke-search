@@ -55,6 +55,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.left .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.left .inputBox .clean {
+  position: absolute;
+  right: 16px;
+  top: 17px;
+  display: none;
+}
+
+.left .inputBox .clean:hover {
+  -webkit-filter: brightness(1.02);
+          filter: brightness(1.02);
+  cursor: pointer;
 }
 
 .left .logo {
@@ -81,7 +104,6 @@ body {
 .left input:hover {
   -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
-  cursor: pointer;
 }
 
 .left input:focus {
@@ -267,6 +289,11 @@ footer p a {
   display: inline;
   text-decoration: none;
   color: #B4B4B4;
+}
+
+.up {
+  -webkit-filter: brightness(1.08);
+          filter: brightness(1.08);
 }
 
 @media screen and (max-width: 1024px) {
