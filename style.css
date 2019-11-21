@@ -72,6 +72,8 @@ body {
   right: 16px;
   top: 17px;
   display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .left .inputBox .clean:hover {
@@ -294,6 +296,8 @@ footer p a {
 .up {
   -webkit-filter: brightness(1.08);
           filter: brightness(1.08);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 @media screen and (max-width: 1024px) {
