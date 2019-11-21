@@ -10,8 +10,15 @@ const iconfont = document.querySelector('.button_iconfont');
 const unsplash = document.querySelector('.button_unsplash');
 const image = document.querySelector('.button_image');
 
-const sreachArr = [
-    {
+document.onkeydown = function (e) {
+    var keyNum = window.event ? e.keyCode : e.which;
+    if (keyNum == 13) {
+        var inputValue = document.querySelector('input').value;
+        window.open(sreachArr[0].url + inputValue)
+    }
+}
+
+const sreachArr = [{
         ele: baidu,
         url: 'https://www.baidu.com/s?wd='
     },
@@ -33,15 +40,14 @@ sreachArr.forEach(d => {
     })
 });
 
-allweb.addEventListener('click',function (){
+allweb.addEventListener('click', function () {
     var inputValue = document.querySelector('input').value;
     sreachArr.forEach(d => {
         window.open(d.url + inputValue)
     })
-}) 
+})
 
-const sreachArr2 = [
-    {
+const sreachArr2 = [{
         ele: dribbble,
         url: 'https://dribbble.com/search/'
     },
@@ -62,15 +68,14 @@ sreachArr2.forEach(d => {
     })
 });
 
-allpic.addEventListener('click',function (){
+allpic.addEventListener('click', function () {
     var inputValue = document.querySelector('input').value;
     sreachArr2.forEach(d => {
         window.open(d.url + inputValue)
     })
-}) 
+})
 
-const sreachArr3 = [
-    {
+const sreachArr3 = [{
         ele: iconfont,
         url: 'https://www.iconfont.cn/search/index?searchType=icon&q='
     },
@@ -88,8 +93,7 @@ sreachArr3.forEach(d => {
 })
 
 
-const sreachArr4 = [
-    {
+const sreachArr4 = [{
         url: 'https://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&sf=1&fmq=&pv=&ic=0&nc=1&z=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&fm=index&pos=history&word='
     },
     {
@@ -97,18 +101,9 @@ const sreachArr4 = [
     },
 ]
 
-image.addEventListener('click',function (){
+image.addEventListener('click', function () {
     var inputValue = document.querySelector('input').value;
     sreachArr4.forEach(d => {
         window.open(d.url + inputValue)
     })
-}) 
-
-
-
-
-
-
-
-
-
+})
