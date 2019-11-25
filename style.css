@@ -260,7 +260,7 @@ body {
 .right .list_3 .button_iconfont {
   width: 126px;
   height: 60px;
-  background-color: #FF5C00;
+  background-color: #F17400;
 }
 
 .right .list_3 .button_unsplash {
@@ -277,8 +277,9 @@ body {
 
 footer {
   position: fixed;
-  bottom: 16px;
+  bottom: 18px;
   text-align: center;
+  line-height: 8px;
 }
 
 footer p {
