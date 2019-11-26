@@ -86,7 +86,7 @@ body {
 
         &::placeholder {
             font-size: 14px;
-            color: #A8ADB8;
+            color: #BEC3CC;
         }
 
     }
@@ -209,6 +209,10 @@ footer {
     bottom: 18px;
     text-align: center;
     line-height: 8px;
+
+    .tip {
+        font-size: 14px;
+    }
 
     p {
         color: #B4B4B4;

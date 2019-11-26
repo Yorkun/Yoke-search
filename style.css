@@ -116,22 +116,22 @@ body {
 
 .left input::-webkit-input-placeholder {
   font-size: 14px;
-  color: #A8ADB8;
+  color: #BEC3CC;
 }
 
 .left input:-ms-input-placeholder {
   font-size: 14px;
-  color: #A8ADB8;
+  color: #BEC3CC;
 }
 
 .left input::-ms-input-placeholder {
   font-size: 14px;
-  color: #A8ADB8;
+  color: #BEC3CC;
 }
 
 .left input::placeholder {
   font-size: 14px;
-  color: #A8ADB8;
+  color: #BEC3CC;
 }
 
 .right {
@@ -280,6 +280,10 @@ footer {
   bottom: 18px;
   text-align: center;
   line-height: 8px;
+}
+
+footer .tip {
+  font-size: 14px;
 }
 
 footer p {
