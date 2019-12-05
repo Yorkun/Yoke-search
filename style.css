@@ -116,22 +116,22 @@ body {
 
 .left input::-webkit-input-placeholder {
   font-size: 14px;
-  color: #BEC3CC;
+  color: #caced7;
 }
 
 .left input:-ms-input-placeholder {
   font-size: 14px;
-  color: #BEC3CC;
+  color: #caced7;
 }
 
 .left input::-ms-input-placeholder {
   font-size: 14px;
-  color: #BEC3CC;
+  color: #caced7;
 }
 
 .left input::placeholder {
   font-size: 14px;
-  color: #BEC3CC;
+  color: #caced7;
 }
 
 .right {
