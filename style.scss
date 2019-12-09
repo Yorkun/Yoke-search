@@ -179,7 +179,7 @@ body {
         align-items: flex-end;
         justify-content: space-between;
         box-shadow: 0 -1px #DDE2E7;
-        
+
 
         .button_iconfont {
             width: 126px;
@@ -217,7 +217,7 @@ footer {
     p {
         color: #B4B4B4;
         font-size: 12px;
-        
+
 
         a {
             font-weight: 700;
@@ -270,6 +270,7 @@ footer {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+
         input {
             margin-bottom: 0;
         }
@@ -279,7 +280,7 @@ footer {
     .inputBox {
         width: 80%;
     }
-     
+
 
     .right {
         width: 88%;
@@ -301,4 +302,34 @@ footer {
         display: none;
     }
 
+}
+
+// ———————— 明亮/黑暗自适应 ————————
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #232931;
+    }
+
+    .container .logo {
+        filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
+    }
+
+    .right .list_1 {
+        box-shadow: 0 1px #33383D;
+    }
+
+    .right .list_3 {
+        box-shadow: 0 -1px #33383D;
+    }
+
+    footer {
+        p {
+            color: #6C7580;
+
+            a {
+                color: #6C7580;
+            }
+        }
+    }
 }

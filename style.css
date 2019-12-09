@@ -381,4 +381,28 @@ footer p a {
     display: none;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #232931;
+  }
+  .container .logo {
+    -webkit-filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
+            filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
+  }
+  .right .list_1 {
+    -webkit-box-shadow: 0 1px #33383D;
+            box-shadow: 0 1px #33383D;
+  }
+  .right .list_3 {
+    -webkit-box-shadow: 0 -1px #33383D;
+            box-shadow: 0 -1px #33383D;
+  }
+  footer p {
+    color: #6C7580;
+  }
+  footer p a {
+    color: #6C7580;
+  }
+}
 /*# sourceMappingURL=style.css.map */
