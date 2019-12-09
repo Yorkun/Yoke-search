@@ -64,7 +64,7 @@ const sreachArr4 = [{
 document.onkeydown = function (e) {
     var keyNum = window.event ? e.keyCode : e.which;
     if (keyNum == 13) {
-        var inputValue = document.querySelector('input').value;
+        var inputValue = document.querySelector('.input').value;
         window.open(sreachArr[0].url + inputValue)
     }
 }
@@ -72,7 +72,7 @@ document.onkeydown = function (e) {
 // ———————清空表单———————
 
 mainInput.oninput = function () {
-    var inputValue = document.querySelector('input').value;
+    var inputValue = document.querySelector('.input').value;
     if (inputValue !== '') {
         clean.style.display = 'block';
     } else {
@@ -81,7 +81,7 @@ mainInput.oninput = function () {
 }
 
 clean.addEventListener('click', function () {
-    document.querySelector('input').value = ''
+    document.querySelector('.input').value = ''
     clean.style.display = 'none';
     mainInput.focus();
 })
@@ -118,13 +118,13 @@ allpic.addEventListener('mouseleave', function () {
 
 sreachArr.forEach(d => {
     d.ele.addEventListener('click', function () {
-        var inputValue = document.querySelector('input').value;
+        var inputValue = document.querySelector('.input').value;
         d.ele.href = d.url + inputValue;
     })
 });
 
 allweb.addEventListener('click', function () {
-    var inputValue = document.querySelector('input').value;
+    var inputValue = document.querySelector('.input').value;
     sreachArr.forEach(d => {
         window.open(d.url + inputValue)
     })
@@ -134,13 +134,13 @@ allweb.addEventListener('click', function () {
 
 sreachArr2.forEach(d => {
     d.ele.addEventListener('click', function () {
-        var inputValue = document.querySelector('input').value;
+        var inputValue = document.querySelector('.input').value;
         d.ele.href = d.url + inputValue;
     })
 });
 
 allpic.addEventListener('click', function () {
-    var inputValue = document.querySelector('input').value;
+    var inputValue = document.querySelector('.input').value;
     sreachArr2.forEach(d => {
         window.open(d.url + inputValue)
     })
@@ -150,7 +150,7 @@ allpic.addEventListener('click', function () {
 
 sreachArr3.forEach(d => {
     d.ele.addEventListener('click', function () {
-        var inputValue = document.querySelector('input').value;
+        var inputValue = document.querySelector('.input').value;
         d.ele.href = d.url + inputValue;
     })
 })
@@ -158,7 +158,7 @@ sreachArr3.forEach(d => {
 // list3-两个图片搜索
 
 image.addEventListener('click', function () {
-    var inputValue = document.querySelector('input').value;
+    var inputValue = document.querySelector('.input').value;
     sreachArr4.forEach(d => {
         window.open(d.url + inputValue)
     })
