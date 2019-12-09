@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #ECF0F3;
+  background-color: #ecf0f3;
   font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,12 +18,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #FF9F0F;
+  background: #ff9f0f;
   color: #fff;
 }
 
 ::selection {
-  background: #FF9F0F;
+  background: #ff9f0f;
   color: #fff;
 }
 
@@ -90,46 +90,46 @@ body {
   width: 96px;
 }
 
-.left input {
+.left .input {
   width: 400px;
   height: 60px;
   border-radius: 100px;
-  color: #2D3641;
+  color: #2d3641;
   border-style: none;
   padding-left: 30px;
   margin-bottom: 116px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  caret-color: #2D3641;
+  caret-color: #2d3641;
 }
 
-.left input:hover {
+.left .input:hover {
   -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
 }
 
-.left input:focus {
+.left .input:focus {
   outline: none;
   -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
 }
 
-.left input::-webkit-input-placeholder {
+.left .input::-webkit-input-placeholder {
   font-size: 14px;
   color: #caced7;
 }
 
-.left input:-ms-input-placeholder {
+.left .input:-ms-input-placeholder {
   font-size: 14px;
   color: #caced7;
 }
 
-.left input::-ms-input-placeholder {
+.left .input::-ms-input-placeholder {
   font-size: 14px;
   color: #caced7;
 }
 
-.left input::placeholder {
+.left .input::placeholder {
   font-size: 14px;
   color: #caced7;
 }
@@ -184,8 +184,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0 1px #DDE2E7;
-          box-shadow: 0 1px #DDE2E7;
+  -webkit-box-shadow: 0 1px #dde2e7;
+          box-shadow: 0 1px #dde2e7;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -194,13 +194,13 @@ body {
 .right .list_1 .button_baidu {
   width: 100px;
   height: 60px;
-  background-color: #306CFF;
+  background-color: #306cff;
 }
 
 .right .list_1 .button_google {
   width: 100px;
   height: 60px;
-  background-color: #EA4436;
+  background-color: #ea4436;
 }
 
 .right .list_1 .button_bing {
@@ -226,19 +226,19 @@ body {
 .right .list_2 .button_dribbble {
   width: 100px;
   height: 60px;
-  background-color: #EA4C89;
+  background-color: #ea4c89;
 }
 
 .right .list_2 .button_behance {
   width: 100px;
   height: 60px;
-  background-color: #0057FF;
+  background-color: #0057ff;
 }
 
 .right .list_2 .button_pinterest {
   width: 100px;
   height: 60px;
-  background-color: #E60124;
+  background-color: #e60124;
 }
 
 .right .list_3 {
@@ -253,26 +253,26 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0 -1px #DDE2E7;
-          box-shadow: 0 -1px #DDE2E7;
+  -webkit-box-shadow: 0 -1px #dde2e7;
+          box-shadow: 0 -1px #dde2e7;
 }
 
 .right .list_3 .button_iconfont {
   width: 126px;
   height: 60px;
-  background-color: #F17400;
+  background-color: #f17400;
 }
 
 .right .list_3 .button_unsplash {
   width: 126px;
   height: 60px;
-  background-color: #2D3641;
+  background-color: #2d3641;
 }
 
 .right .list_3 .button_image {
   width: 126px;
   height: 60px;
-  background: linear-gradient(115.46deg, #336EFF 0%, #FF4A3F 100%);
+  background: linear-gradient(115.46deg, #336eff 0%, #ff4a3f 100%);
 }
 
 footer {
@@ -287,7 +287,7 @@ footer .tip {
 }
 
 footer p {
-  color: #B4B4B4;
+  color: #b4b4b4;
   font-size: 12px;
 }
 
@@ -295,7 +295,7 @@ footer p a {
   font-weight: 700;
   display: inline;
   text-decoration: none;
-  color: #B4B4B4;
+  color: #b4b4b4;
 }
 
 .up {
@@ -389,20 +389,27 @@ footer p a {
   .container .logo {
     -webkit-filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
             filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
+    opacity: 0.9;
+  }
+  .inputBox {
+    opacity: 0.9;
+  }
+  .right {
+    opacity: 0.9;
   }
   .right .list_1 {
-    -webkit-box-shadow: 0 1px #33383D;
-            box-shadow: 0 1px #33383D;
+    -webkit-box-shadow: 0 1px #33383d;
+            box-shadow: 0 1px #33383d;
   }
   .right .list_3 {
-    -webkit-box-shadow: 0 -1px #33383D;
-            box-shadow: 0 -1px #33383D;
+    -webkit-box-shadow: 0 -1px #33383d;
+            box-shadow: 0 -1px #33383d;
   }
   footer p {
-    color: #6C7580;
+    color: #5b636d;
   }
   footer p a {
-    color: #6C7580;
+    color: #5b636d;
   }
 }
 /*# sourceMappingURL=style.css.map */
