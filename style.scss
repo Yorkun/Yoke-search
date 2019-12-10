@@ -230,6 +230,9 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 140px;
+    .right .list_2 {
+      height: 110px;
+    }
   }
 }
 
@@ -271,7 +274,7 @@ footer {
     .list_1,
     .list_2,
     .list_3 {
-      height: 77px;
+      height: 90px;
 
       a {
         margin: 0 5px;
@@ -286,22 +289,23 @@ footer {
 
 // ———————— 明亮/黑暗自适应 ————————
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #232931;
-  }
+.dark {
+  background-color: #232931;
 
-  .container .logo {
-    filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
-    opacity: 0.9;
-  }
-  .inputBox {
-    opacity: 0.9;
+
+  .container {
+    .left {
+      // opacity: 0.9;
+    }
+    .logo {
+      filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
+    }
   }
 
   .right {
-    opacity: 0.9;
+    // opacity: 0.9;
   }
+
   .right .list_1 {
     box-shadow: 0 1px #33383d;
   }
@@ -315,7 +319,7 @@ footer {
       color: #5b636d;
 
       a {
-        color: #5b636d;
+        color: #737a82;
       }
     }
   }

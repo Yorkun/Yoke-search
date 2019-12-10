@@ -163,3 +163,9 @@ image.addEventListener('click', function () {
         window.open(d.url + inputValue)
     })
 })
+
+var switchBtn = document.querySelector('.switchBtn');
+
+switchBtn.addEventListener('click', function() {
+    document.body.classList.toggle('dark')
+})
