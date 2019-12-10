@@ -152,3 +152,12 @@
     }
 }
 
+.moon {
+    &::before {
+        transform: rotateY(180deg) !important;
+    }
+    &::after {
+        transform: rotateY(0deg) !important;
+    }
+}
+

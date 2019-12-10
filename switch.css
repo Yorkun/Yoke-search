@@ -196,4 +196,14 @@
             transform: rotateY(0deg);
   }
 }
+
+.moon::before {
+  -webkit-transform: rotateY(180deg) !important;
+          transform: rotateY(180deg) !important;
+}
+
+.moon::after {
+  -webkit-transform: rotateY(0deg) !important;
+          transform: rotateY(0deg) !important;
+}
 /*# sourceMappingURL=switch.css.map */

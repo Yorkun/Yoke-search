@@ -166,6 +166,21 @@ image.addEventListener('click', function () {
 
 var switchBtn = document.querySelector('.switchBtn');
 
-switchBtn.addEventListener('click', function() {
-    document.body.classList.toggle('dark')
+// 颜色模式切换
+
+switchBtn.addEventListener('click', function () {
+    if (document.body.className == '') {
+        document.body.classList.add('dark')
+        localStorage.setItem('isDark', 'true')
+    } else {
+        document.body.classList.remove('dark')
+        localStorage.removeItem('isDark')
+    }
 })
+
+if (!localStorage.getItem('isDark')) {
+    document.body.classList.remove('dark')
+} else {
+    document.body.classList.add('dark')
+    switchBtn.classList.add('moon')
+}
