@@ -37,6 +37,27 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 80px;
+  -webkit-animation: boxShow 0.6s ease forwards;
+          animation: boxShow 0.6s ease forwards;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+@-webkit-keyframes boxShow {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes boxShow {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .left {
@@ -392,6 +413,11 @@ footer p a {
 .dark .container .logo {
   -webkit-filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
           filter: invert(1) contrast(0.9) hue-rotate(192deg) saturate(1.4) brightness(1.5);
+}
+
+.dark .container .clean {
+  -webkit-filter: brightness(0.97);
+          filter: brightness(0.97);
 }
 
 .dark .right .list_1 {
