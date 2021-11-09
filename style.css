@@ -108,7 +108,7 @@ body {
 }
 
 .left .logo img {
-  width: 96px;
+  width: 120px;
 }
 
 .left .input {
@@ -137,22 +137,22 @@ body {
 
 .left .input::-webkit-input-placeholder {
   font-size: 14px;
-  color: #caced7;
+  color: #bfc3cc;
 }
 
 .left .input:-ms-input-placeholder {
   font-size: 14px;
-  color: #caced7;
+  color: #bfc3cc;
 }
 
 .left .input::-ms-input-placeholder {
   font-size: 14px;
-  color: #caced7;
+  color: #bfc3cc;
 }
 
 .left .input::placeholder {
   font-size: 14px;
-  color: #caced7;
+  color: #bfc3cc;
 }
 
 .right {
@@ -304,7 +304,7 @@ footer {
 }
 
 footer .tip {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 footer p {
