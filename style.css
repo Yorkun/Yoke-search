@@ -124,6 +124,10 @@ body {
   caret-color: #2d3641;
 }
 
+.left .input .clean {
+  fill: #e60124;
+}
+
 .left .input:hover {
   -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
@@ -418,6 +422,48 @@ footer p a {
 .dark .container .clean {
   -webkit-filter: brightness(0.97);
           filter: brightness(0.97);
+}
+
+.dark .input {
+  color: #ffffff;
+  background: #131416;
+  border-style: none;
+  padding-left: 30px;
+  margin-bottom: 116px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  caret-color: #2d3641;
+}
+
+.dark .input:hover {
+  background: #16171a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dark .input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dark .input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #4f5155;
+}
+
+.dark .input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #4f5155;
+}
+
+.dark .input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #4f5155;
+}
+
+.dark .input::placeholder {
+  font-size: 14px;
+  color: #4f5155;
 }
 
 .dark .right .list_1 {
